@@ -1,108 +1,53 @@
-# Dependencies
+# Ye pattern dhundhega: repo/node_modules, repo/project1/node_modules, repo/project2/backend/node_modules, etc.
 **/node_modules/
+**/bower_components/
 **/jspm_packages/
-**/web_modules/
-**/.pnpm-store/
-**/.yarn/cache/
-**/.yarn/install-state.gz
-
-# Python environments and caches
 **/.venv/
 **/venv/
 **/env/
-**/__pycache__/
-**/*.py[cod]
-**/.pytest_cache/
-**/.mypy_cache/
-**/.ruff_cache/
 
-# Java and build tooling
-**/target/
-**/.gradle/
-**/out/
-**/*.class
-
-# Build, generated, and coverage output
-**/dist/
-**/dist-ssr/
-**/build/
-**/coverage/
-**/.nyc_output/
-**/*.lcov
-**/*.tsbuildinfo
-
-# Environment and local configuration
+# ==========================================
+# ENVIRONMENT & SECRETS (Very Important)
+# ==========================================
+# Ye kisi bhi level par .env, .env.local, .env.production sabko ignore karega
 **/.env
 **/.env.*
 !**/.env.example
-**/*.local
 
-# Logs and diagnostics
+# ==========================================
+# BUILD OUTPUTS & DIST
+# ==========================================
+**/dist/
+**/build/
+**/out/
+**/coverage/
+**/*.tsbuildinfo
+
+# ==========================================
+# LOGS & DEBUG
+# ==========================================
 **/logs/
 **/*.log
 **/npm-debug.log*
 **/yarn-debug.log*
 **/yarn-error.log*
-**/pnpm-debug.log*
-**/lerna-debug.log*
-**/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
-# Tool caches
-**/.cache/
-**/.parcel-cache/
-**/.eslintcache
-**/.stylelintcache
-**/.rpt2_cache/
-**/.rts2_cache_*/
-**/.temp/
-**/.next/
-**/.nuxt/
-**/.docusaurus/
-**/.serverless/
-**/.fusebox/
-**/.dynamodb/
-**/.yarn/
-**/.npm/
-**/.pnp.*
-**/.langnostic
-**/*.tgz
-**/.turbo/
-**/.vercel/
-**/.vite/
-**/.cache-loader/
-
-# Temporary files and local databases
-**/*.tmp
-**/*.temp
-**/*.bak
-**/*.swp
-**/*.swo
-**/*.sqlite
-**/*.sqlite3
-**/*.db
-
-# Docker and local infrastructure overrides
-**/docker-compose.override.yml
-**/docker-compose.override.yaml
-**/.terraform/
-**/*.tfstate
-**/*.tfstate.*
-
-# Editors and operating systems
-**/.vscode/*
-!**/.vscode/extensions.json
-**/.idea/
+# ==========================================
+# OS & IDE FILES
+# ==========================================
 **/.DS_Store
 **/Thumbs.db
-**/*.suo
-**/*.ntvs*
-**/*.njsproj
-**/*.sln
-**/*.sw?
-**/.history/
-**/.fleet/
+**/.idea/
+**/.vscode/
+**/*.swp
 
-# OS metadata
-**/$RECYCLE.BIN/
-**/ehthumbs.db
-**/Desktop.ini
+# ==========================================
+# CACHE & TEMPORARY
+# ==========================================
+**/.cache/
+**/.next/
+**/.nuxt/
+**/.turbo/
+**/.parcel-cache/
+**/tmp/
+**/temp/
